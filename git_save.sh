@@ -1,5 +1,5 @@
 #!/bin/sh
 git add .
 git status 
-git commit -m "Second Commit"
-git pull
+git commit -m "Third Commit"
+git push --all
