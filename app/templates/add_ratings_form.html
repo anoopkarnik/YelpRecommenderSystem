@@ -1,0 +1,12 @@
+{% extends "home.html" %}
+{% block content %}   
+<div class="container">
+	<p style ="font-size: 25px;">Ratings Added</p>
+    <form action="" method="post" name="AddRatings">
+		{{ form.hidden_tag() }}
+		<div>Enter User ID : </div> <div id = "search">{{ form.user_id(size=20) }} </div><br>
+		<br>
+		<div id = "search"><input type="submit" name = "submit" value="Add Ratings"> </div>
+	</form>
+</div>  
+{% endblock %}	

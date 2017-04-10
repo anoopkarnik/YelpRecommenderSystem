@@ -1,0 +1,20 @@
+{% extends "home.html" %}
+{% block content %}  
+<p style ="font-size: 25px;">Rating for the business</p>
+<form action="http://0.0.0.0:5333/Popularity_recommender_engine" method="post" name="ratings3">
+	<div>Enter Location : </div> <div id = "search">
+	<select name="location" >
+		  <option value="Carnegie">Carnegie</option>
+		  <option value="Homestead">Homestead</option>
+		  <option value="Pittsburgh">Pittsburgh</option>
+		  <option value="Charlotte">Charlotte</option>
+		  <option value="Madison">Madison</option>
+		  <option value="Phoenix">Phoenix</option>
+		  <option value="Cleveland">Cleveland</option>
+	</select></div><br>
+	
+	<br>
+	<div id = "search"><input type="submit" name = "submit" value="Get Top Ratings"> </div>
+</form>
+
+{% endblock %}	

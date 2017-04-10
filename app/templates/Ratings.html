@@ -1,0 +1,8 @@
+
+{% extends "home.html" %}
+{% block content %}     
+    {% for rating in ratings %}
+    <div><p><b>{{ rating[0] }}</b>  with rating {{ rating[1] }} for {{user_id}} and total count = {{rating[2]}} </p></div>
+    {% endfor %}
+{% endblock %}	
+

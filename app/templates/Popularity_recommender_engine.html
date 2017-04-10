@@ -1,0 +1,8 @@
+{% extends "home.html" %}
+{% block content %}     
+<p style ="font-size: 25px;">Popularity based Recommendations</p>
+    {% for rating in ratings %}
+    <div><p><b>{{ rating[2] }}</b>  with rating {{ rating[1] }} in {{rating[3]}} </p></div>
+    {% endfor %}
+{% endblock %}	
+

@@ -1,0 +1,12 @@
+{% extends "home.html" %}
+{% block content %}  
+<p style ="font-size: 25px;">Top User Recommendations</p>
+<form action="" method="post" name="ratings">
+	{{ form.hidden_tag() }}
+	<div>Enter User ID :</div> <div id = "search">{{ form.user_id(size=20) }} </div><br>
+	<div>Enter Recommendations Count :</div> <div id = "search">{{ form.count(size = 20) }} </div>
+	
+	<br>
+	<div id ="search"><input type="submit" name = "submit" value="Get Top Recommendations"></div>
+</form>
+{% endblock %}		
